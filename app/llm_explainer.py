@@ -82,13 +82,14 @@ def _stream_groq(system_prompt, user_prompt, api_key):
     client = Groq(api_key=api_key)
 
     stream = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user",   "content": user_prompt},
         ],
-        max_tokens=700,
+        max_tokens=1500,
         temperature=0.4,
+        reasoning_effort="low",
         stream=True,
     )
 
