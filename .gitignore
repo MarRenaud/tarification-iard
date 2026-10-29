@@ -1,0 +1,5 @@
+data/
+__pycache__/
+figures/
+fix_notebook.py
+venv/

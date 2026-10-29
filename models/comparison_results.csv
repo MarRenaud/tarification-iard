@@ -1,0 +1,4 @@
+Modele,Gini,RMSE,MAE
+GLM Poisson x Gamma,0.3342,1175.76,418.43
+GLM Tweedie,0.3313,1110.83,214.75
+XGBoost,0.3676,1108.84,204.3
